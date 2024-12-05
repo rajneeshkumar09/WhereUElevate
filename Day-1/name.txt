@@ -1,0 +1,8 @@
+This is my first to use git operator
+
+add file in remote remo
+1. init
+2. add
+3. commit
+4. origin
+5. push
