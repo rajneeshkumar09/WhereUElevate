@@ -99,3 +99,109 @@ Revisiting Anchor Tag:
                                         ↑ 
                                     clickable pic
 
+Revisiting Image Tag:
+ <img src="link" height=50px >
+                    ↑ 
+                set height 
+ <img src="link" width=50px >
+                    ↑
+                set width
+
+Div Tag:
+    > Div is a container used for other HTML elements 
+    > Block Element (takes full width)
+
+List: Block Tags
+ <address>      <article>      <aside>  <blockquote> <canvas>         <dd>          <div>       <dl>    <dt>           <fieldset>     <figcaption> <figure> <footer>         <form>        <h1>-<h6>   <header> <hr>              <li>           <main>      <nav> <noscript>        <ol>             <p>       <pre> 
+
+Span Tag:
+    > Span is also a container used for other HTML elements 
+    > Inline Element (takes width as per size)
+
+List: Span Tags
+ <code>     <dfn>   <output>    <q>      <a>      <em> <samp>     <abbr>    <i>     <script> <acronym> <img> <select>     <b>    <input>   <small>   <bdo>   <kbd> <span>      <big>   <label>   <strong>   <br>   <map> <sub>      <button> <object>   <sup>    <cite>   <tt> <textarea>   <var>    <time> 
+
+ List in HTML:
+    > Lists are used to represent real life list data. > unordered               > ordered 
+        <ul>                    <ol> 
+            <li> Apple </li>        <li> Apple </li> 
+            <li> Mango </li>        <li > Mango </li> 
+        </ul>                    </ol>
+
+Tables in HTML:
+    > Tables are used to represent real life table data. 
+        <tr> used to display table row 
+        <td> used to display table data 
+        <th> used to display table header
+
+* For Table Caption we used caption tag.
+    <caption> Content </caption>
+
+thead & tbody in Tables:
+     <thead> to wrap table head 
+     <tbody> to wrap table body
+
+* colspan Attributes used for to add(to merge) columns
+    colspan="value"
+
+Form in HTML:
+    > Forms are used to collect data from the user 
+    > Eg- sign up/login/help requests/contact me 
+        <form> 
+            form content 
+        </form>
+
+Action in Form:
+    > Action attribute is used to define what action needs to be performed when a form is submitted     
+        <form action="/action.php" >
+
+Form Element: Input 
+    <input type="text" placeholder="Enter Name">
+
+Label:
+     <label for="id1"> 
+        <input type="radio" value="class X" name="class" id="id1">
+     </label> 
+     
+     <label for="id2"> 
+        <input type="radio" value="class X" name="class" id="id2"
+     </label>
+
+Class & Id:
+     <div id="id1" class="group1"> 
+     
+     </div> 
+     
+     <div id="id2"> class="group1"> 
+     
+     </div>
+
+Checkbox:
+     <label for="id1"> 
+        <input type="checkbox" value="class X" name="class" id="id1"> 
+     </label> 
+    
+    <label for="id2"> 
+        <input type="checkbox" value="class X" name="class" id="id2">
+    </label>
+
+Select:
+     <select name="city" id="city"> 
+        <option value="Delhi"> Delhi </option> 
+        <option value="Mumbai"> Mumbai </option> 
+        <option value="Banglore"> Banglore </option> 
+     </select>
+
+iframe Tag:
+    > website inside website 
+        <iframe src="link">
+
+Video Tag:
+     <video src="myVid.mp4"> My Video </video> 
+     
+    > Attributes 
+        -controls 
+        -height 
+        -width 
+        -loop 
+        -autoplay
