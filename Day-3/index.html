@@ -6,7 +6,6 @@
         <title>Demo_Project</title>
     </head>
     <body>
-        <a href="./portfolio.html" target="_blank">Portfolio</a>
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
@@ -20,6 +19,7 @@
         corporis qui commodi. Illum quidem eius enim est quibusdam ad dolores?
         </p>
         <hr />
+        <a href="./portfolio.html" target="_blank">Portfolio</a> <br />
         <a href="https://google.com"> Google </a>
         <br />
         <a href="https://code.visualstudio.com/download">Download VS Code</a>
@@ -54,13 +54,152 @@
         architecto quos ullam perspiciatis libero accusamus nulla ipsam.
         </p>
         <pre>
-    Lorem          ipsum dolor sit amet      consectetur adipisicing elit. 
-            Molestiae veniam quaerat    similique nobis sint  
-            autem quas    nam tenetur ut.
-            Atque suscipit sed     architecto quos ullam perspiciatis 
-        libero accusamus   nulla ipsam.</pre>
+        Lorem          ipsum dolor sit amet      consectetur adipisicing elit. 
+                Molestiae veniam quaerat    similique nobis sint  
+                autem quas    nam tenetur ut.
+                Atque suscipit sed     architecto quos ullam perspiciatis 
+            libero accusamus   nulla ipsam.</pre
+        >
+        <hr />
+        <div>
+        <p>Div is a block element.</p>
+        </div>
+        <hr />
+        <ul>
+        <li>Apple</li>
+        <ul>
+            <li>color : red</li>
+            <li>season : winters</li>
+        </ul>
+        <li>Mango</li>
+        <ul>
+            <li>color : yello</li>
+            <li>season : summers</li>
+        </ul>
+        <li>Litchi</li>
+        </ul>
+        <hr />
+        <ol>
+        <li>Apple</li>
+        <ol>
+            <li>color : red</li>
+            <li>season : winters</li>
+        </ol>
+        <li>Mango</li>
+        <ol>
+            <li>color : yello</li>
+            <li>season : summers</li>
+        </ol>
+        <li>Litchi</li>
+        </ol>
+        <hr />
+        <table>
+        <thead>
+            <caption>
+            Student data
+            </caption>
+            <tr>
+            <!-- <th> Name </th> 
+                    <th> Roll No </th>  -->
+            <th colspan="2">Information</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Rajneesh</td>
+            <td>1664</td>
+            </tr>
+            <tr>
+            <td>Abhishek</td>
+            <td>1680</td>
+            </tr>
+            <tr>
+            <td>Sameer</td>
+            <td>1694</td>
+            </tr>
+        </tbody>
+        </table>
+        <hr />
+        <h4>Registration Form</h4>
+        <form action="/action.php">
+        <input type="text" placeholder="username" /> <br />
+        <br />
+        <input type="password" placeholder="password" /> <br />
+        <h5>Select your class</h5>
+        <label for="id101"
+            ><input type="radio" value="class XI" name="class" id="id101" /> class
+            XI</label
+        >
+        <br />
+        <label for="id102"
+            ><input type="radio" value="class XII" name="class" id="id102" /> class
+            XII</label
+        >
+        <br />
+        <h5>Select your Fav subject</h5>
+        <label for="math">
+            <input type="checkbox" value="math" name="subject" id="101" /> Math
+        </label>
+        <br />
+        <label for="physics">
+            <input type="checkbox" value="physics" name="subject" id="102" />
+            Physics
+        </label>
+        <br />
+        <label for="chemistry">
+            <input type="checkbox" value="chemistry" name="subject" id="103" />
+            Chemistry
+        </label>
+        <br />
+        <label for="computer science">
+            <input
+            type="checkbox"
+            value="computer science"
+            name="subject"
+            id="104"
+            />
+            computer Science
+        </label>
+        <br />
+        <br />
+        <h5>Select your city</h5>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Banglore">Banglore</option>
+        </select>
+        <br />
+        <br />
+        <textarea
+            name="feedback"
+            id="1001"
+            placeholder="Please give your valuable Feedback"
+            rows="5"
+        ></textarea>
+        <br />
 
-        <hr>
-        
+        <input type="submit" /> <br />
+        </form>
+        <hr />
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/pmog2cABaJk?si=lxCNS_OZ4jowuCU0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        ></iframe>
+        <hr />
+        <video
+        height="315"
+        src="../Day-3/videos/VID-20230527-WA0001.mp4"
+        controls
+        loop
+        >
+        My video
+        </video>
     </body>
 </html>
