@@ -363,90 +363,307 @@ HTML Styles - CSS:
             border: 2px solid powderblue;
             margin: 50px;
         }
+HTML Links - Create Bookmarks:
+    > To create a bookmark - first create the bookmark, then add a link to it.
+    > When the link is clicked, the page will scroll down or up to the location with the bookmark.
+
+    > Use the id attribute (id="value") to define bookmarks in a page
+    > Use the href attribute (href="#value") to link to the bookmark
 
 HTML Links:
-    >HTML links are defined with the <a> tag.
+    > HTML links are defined with the <a> tag.
+    > HTML links are hyperlinks.
+    > You can click on a link and jump to another document.
+    > Syntax : <a href="url">link text</a>
 Example:
     <a href="https://www.w3schools.com">This is a link</a>
 
 > The link's destination is specified in the href attribute. 
 > Attributes are used to provide additional information about HTML elements.
 
+By default, links will appear as follows in all browsers:
+    > An unvisited link is underlined and blue
+    > A visited link is underlined and purple
+    > An active link is underlined and red
+
+The target Attribute:
+    > The target attribute specifies where to open the linked document.
+    > _self - Default. Opens the document in the same window/tab 
+    > _blank - Opens the document in a new window or tab
+    > _parent - Opens the document in the parent frame
+    > _top - Opens the document in the full body of the window
+
+HTML Links - Use an Image as a Link:
+    > To use an image as a link, just put the <img> tag inside the <a> tag:
+Example:
+    <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+
+Link to an Email Address:
+    > Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email).
+Example:
+    <a href="mailto:someone@example.com">Send email</a>
+
+Link Titles:
+    > The title attribute specifies extra information about an element.
+Example:
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
 HTML Images:
     > HTML images are defined with the <img> tag.
     > The source file (src), alternative text (alt), width, and height are provided as attributes.
+    > Images can improve the design and the appearance of a web page.
+    > The <img> tag is empty, it contains attributes only, and does not have a closing tag.
+    > src attribute specifies the path (URL) to the image.
+    > alt attribute provides an alternate text for an image
 Example:
     <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+Image Floating:
+    > Use the CSS float property to let the image float to the right or to the left of a text.
+Example:
+    <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+Image Maps:
+    > The HTML <map> tag defines an image map. 
+    > An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+Example:
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+    </map>
+usemap attribute:
+    > usemap value starts with a hash tag # followed by the name of the image map
+    >  used to create a relationship between the image and the image map.
+Example:
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+Create Image Map:
+    > add a <map> element.
+    > The <map> element is used to create an image map, and is linked to the image by using the required name attribute:
+        <map name="workmap">
+    > The name attribute must have the same value as the <img>'s usemap attribute .
 
-HTML Attributes
-All HTML elements can have attributes
-Attributes provide additional information about elements
-Attributes are always specified in the start tag
-Attributes usually come in name/value pairs like: name="value"
+The Areas:
+    > A clickable area is defined using an <area> element.
+    > Shape:
+        rect - defines a rectangular region
+        circle - defines a circular region
+        poly - defines a polygonal region
+        default - defines the entire region
 
-The href Attribute
-The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+HTML Background Images:
+    > To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property. 
+        <p style="background-image: url('img_girl.jpg');">
+Background Repeat:
+    > To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+Example:
+    <style>
+        body {
+            background-image: url('example_img_girl.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
 
+Background Cover:
+    > If you want the background image to cover the entire element, you can set the background-size property to cover.
+    > Also, to make sure the entire element is always covered, set the background-attachment property to fixed.
 Example
-<a href="https://www.w3schools.com">Visit W3Schools</a>
+    <style>
+        body {
+            background-image: url('img_girl.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+Background Stretch:
+    > If you want the background image to stretch to fit the entire element, you can set the background-size property to 100% 100%.
+Example:
+    <style>
+        body {
+            background-image: url('img_girl.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+HTML <picture> Element:
+    > The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+    > The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute.
+    > There are two main purposes for the <picture> element:
+        1. Bandwidth
+        2. Format Support
+Example:
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg">
+    </picture>
 
-The src Attribute
-The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+HTML Attributes:
+    > All HTML elements can have attributes
+    > Attributes provide additional information about elements
+    > Attributes are always specified in the start tag
+    > Attributes usually come in name/value pairs like: 
+        name="value"
 
-Example
-<img src="img_girl.jpg">
+The href Attribute:
+    > The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to
+Example:
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
 
-There are two ways to specify the URL in the src attribute:
+The src Attribute:
+    > The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:
+Example:
+    <img src="img_girl.jpg">
 
-1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+* There are two ways to specify the URL in the src attribute:
+
+    1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
 
 Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
 
-2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+    2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
 
 Tip: It is almost always best to use relative URLs. They will not break if you change domain.
 
-The width and height Attributes
-The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):
+The width and height Attributes:
+    > The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels).
+Example:
+    <img src="img_girl.jpg" width="500" height="600">
 
-Example
-<img src="img_girl.jpg" width="500" height="600">
+The alt Attribute:
+    > The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+Example:
+    <img src="img_girl.jpg" alt="Girl with a jacket">
 
+The style Attribute:
+    > The style attribute is used to add styles to an element, such as color, font, size, and more.
+Example:
+    <p style="color:red;">This is a red paragraph.</p>
 
-The alt Attribute
-The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+The style Attribute:
+    > The style attribute is used to add styles to an element, such as color, font, size, and more.
+Example:
+    <p style="color:red;">This is a red paragraph.</p>
 
-Example
-<img src="img_girl.jpg" alt="Girl with a jacket">
+* Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+    The following example specifies English as the language and United States as the country:
 
-The style Attribute
-The style attribute is used to add styles to an element, such as color, font, size, and more.
+    <!DOCTYPE html>
+    <html lang="en-US">
+        <body>
+            ...
+        </body>
+    </html>
 
-Example
-<p style="color:red;">This is a red paragraph.</p>
+The title Attribute:
+    > The title attribute defines some extra information about an element.
+Example:
+    <p title="I'm a tooltip">This is a paragraph.</p>
 
-The style Attribute
-The style attribute is used to add styles to an element, such as color, font, size, and more.
+HTML Favicon:
+    > A favicon is a small image displayed next to the page title in the browser tab.
+    > <link rel="icon" type="image/x-icon" href="URL">
 
-Example
-<p style="color:red;">This is a red paragraph.</p>
+HTML Page Title:
+    > Every web page should have a page title to describe the meaning of the page.
+    > The <title> element adds a title to your page.
+        > displays a title for the page in search engine-results
 
-Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+HTML Tables:
+    > HTML tables allow web developers to arrange data into rows and columns.
+    > A table in HTML consists of table cells inside rows and columns.
+    > Table Cells:
+        > Each table cell is defined by a <td> and a </td> tag.
+        > td stands for table data.
+            Example:
+                <table>
+                    <tr>
+                        <td>Emil</td>
+                        <td>Tobias</td>
+                        <td>Linus</td>
+                    </tr>
+                </table>
+    > Table Rows:
+        > Each table row starts with a <tr> and ends with a </tr> tag.
+        > tr stands for table row.
+    > Table Headers:
+        > For table header use <th>---</th> tag.
+        > th stands for table header.
 
-The following example specifies English as the language and United States as the country:
+Tag	        Description
+<table>	    Defines a table
+<th>	    Defines a header cell in a table
+<tr>	    Defines a row in a table
+<td>	    Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a 
+            table for formatting
+<col>	    Specifies column properties for each column     
+            within a <colgroup> element
+<thead>	    Groups the header content in a table
+<tbody>	    Groups the body content in a table
+<tfoot>	    Groups the footer content in a table
 
-<!DOCTYPE html>
-<html lang="en-US">
-<body>
-...
-</body>
-</html>
-
-The title Attribute
-The title attribute defines some extra information about an element.
-
-The value of the title attribute will be displayed as a tooltip when you mouse over the element:
-
-Example
-<p title="I'm a tooltip">This is a paragraph.</p>
-
+HTML Table Borders:
+    > HTML tables can have borders of different styles and shapes.
+    > Add a Border:
+        > To add a border, use the CSS border property on table, th, and td elements:
+        Example:
+            table, th, td {
+                border: 1px solid black;
+            }
+    > Collapsed Table Borders:
+        > To avoid having double borders, set the CSS border-collapse property to collapse.
+        Example:
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+    > Style Table Borders:
+        > If you set a background color of each cell, and give the border a white color (the same as the document background), you get the impression of an invisible border.
+        Example:
+            table, th, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            th, td {
+                background-color: #96D4D4;
+            }
+    > Round Table Borders:
+        > With the border-radius property, the borders get rounded corners.
+        Example:
+            table, th, td {
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+    > Dotted Table Borders:
+        > With the border-style property, you can set the appearance of the border.
+        > Values:
+            dotted     
+            dashed     
+            solid     
+            double     
+            groove     
+            ridge     
+            inset     
+            outset     
+            none     
+            hidden
+        Example:
+            th, td {
+                border-style: dotted;
+            }
+    > Border Color:
+        > With the border-color property, you can set the color of the border.
+        th, td {
+            border-color: #96D4D4;
+        }
+    > HTML Table Sizes:
+        > HTML tables can have different sizes for each column, row or the entire table.
+        > Use the style attribute with the width or height properties to specify the size of a table, row or column.
+    > HTML Table Headers:
+        >
