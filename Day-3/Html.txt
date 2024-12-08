@@ -1,6 +1,6 @@
 HTML : 
-    1. HTML is the standard markup language for creating Web pages.
-    2. HTML stands for Hyper Text Markup Language
+    1. HTML stands for Hyper Text Markup Language
+    2. HTML is the standard markup language for creating Web pages.
     3. HTML describes the structure of a Web page
     4. HTML consists of a series of elements
     5. HTML elements tell the browser how to display the content
@@ -30,7 +30,7 @@ Example Explained :
 HTML Element :
     > An HTML element is defined by a start tag, some content, and an end tag:
         <tagname> Content goes here... </tagname>
-    > The HTML element is everything from the start tag to the end tag:
+    > The HTML element is everything from the start tag to the end tag.
         <h1>My First Heading</h1>
         <p>My first paragraph.</p>
 
@@ -107,6 +107,11 @@ Example:
     </p>
 Example:
     <p>This is a paragraph.</p>
+
+HTML Style Attribute:
+    > The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+    > Syntax: 
+        <tagname style="property:value;">
 
 HTML Horizontal Rules:
     > The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
