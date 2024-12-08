@@ -112,9 +112,37 @@ HTML Style Attribute:
     > The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
     > Syntax: 
         <tagname style="property:value;">
+    Background Color:
+        > The CSS background-color property defines the background color for an HTML element.
+        Example:
+            <body style="background-color:powderblue;">
+                <h1>This is a heading</h1>
+                <p>This is a paragraph.</p>
+            </body>
+    Text Color:
+        > The CSS color property defines the text color for an HTML element.
+        Example:
+            <h1 style="color:blue;">This is a heading</h1>
+            <p style="color:red;">This is a paragraph.</p>
+    Fonts:
+        > The CSS font-family property defines the font to be used for an HTML element.
+        Example:
+            <h1 style="font-family:verdana;">This is a heading</h1>
+            <p style="font-family:courier;">This is a paragraph.</p>
+    Text Size:
+        > The CSS font-size property defines the text size for an HTML element.
+        Example:
+            <h1 style="font-size:300%;">This is a heading</h1>
+            <p style="font-size:160%;">This is a paragraph.</p>
+    Text Alignment:
+        > The CSS text-align property defines the horizontal text alignment for an HTML element.
+        Example:
+            <h1 style="text-align:center;">Centered Heading</h1>
+            <p style="text-align:center;">Centered paragraph.</p>
+
 
 HTML Horizontal Rules:
-    > The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+    > The <hr> tag defines a thematic break in an HTML page.
     > The <hr> element is used to separate content (or define a change) in an HTML page.
     > The <hr> tag is an empty tag, which means that it has no end tag.
 Example:
@@ -158,6 +186,171 @@ Example:
     Oh, bring back my Bonnie to me.
     </pre>
 
+HTML Text Formatting:
+    > Formatting elements were designed to display special types of text:
+        <b> - Bold text
+        <strong> - Important text
+        <i> - Italic text
+        <em> - Emphasized text
+        <mark> - Marked/Highlighted text
+        <small> - Smaller text
+        <del> - Deleted text
+        <ins> - Inserted text
+        <sub> - Subscript text
+        <sup> - Superscript text
+Example:
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+
+HTML Quotation and Citation Elements:
+    > HTML <blockquote> for Quotations:
+        > The HTML <blockquote> element defines a section that is quoted from another source.
+        > Browsers usually indent <blockquote> elements.
+            Example:
+                <p>Here is a quote from WWF's website:</p>
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+                </blockquote>
+    > HTML <q> for Short Quotations:
+        > The HTML <q> tag defines a short quotation.
+        > Browsers normally insert quotation marks around the quotation.
+            Example:
+                <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    > HTML <abbr> for Abbreviations:
+        > The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+        > Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+    Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element. 
+        Example:
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    > HTML <address> for Contact Information:
+        > The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+        > The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+        > The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+            Example:
+                <address>
+                Written by John Doe.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+                </address>
+    > HTML <cite> for Work Title:
+        > The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).
+    Note: A person's name is not the title of a work.
+        >The text in the <cite> element usually renders in italic.
+            Example:
+                <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    > HTML <bdo> for Bi-Directional Override:
+        > BDO stands for Bi-Directional Override.
+        > The HTML <bdo> tag is used to override the current text direction.
+            Example:
+                <bdo dir="rtl">This text will be written from right to left</bdo>
+
+HTML Comments:
+    > HTML comments are not displayed in the browser, but they can help document your HTML source code.
+    > Comments can be used to hide content.
+    > Everything between the <!-- and the --> will be hidden from the display.
+Example:
+    <p>This is a paragraph.</p>
+    <!-- <p>This is another paragraph </p> -->
+    <p>This is a paragraph too.</p>
+    <p>This <!-- great text --> is a paragraph.</p>
+
+HTML Colors:
+    > HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+Example:
+    rgb(255, 99, 71)
+    #ff6347
+    hsl(9, 100%, 64%)
+    rgba(255, 99, 71, 0.5)
+    hsla(9, 100%, 64%, 0.5)
+
+HTML RGB and RGBA Colors:
+    >An RGB color value represents RED, GREEN, and BLUE light sources.
+    > An RGBA color value is an extension of RGB with an Alpha channel (opacity) - which specifies the opacity for a color.
+    > RGB Color Values:
+        > rgb(red, green, blue)
+        > Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+    > RGBA Color Values: 
+        > rgba(red, green, blue, alpha)
+        > he alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
+HTML HEX Colors:
+    > A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+    > #rrggbb
+    > Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff
+HTML HSL and HSLA Colors:
+    > HSL stands for hue, saturation, and lightness.
+    > HSLA color values are an extension of HSL with an Alpha channel (opacity) - which specifies the opacity for a color.
+    > HSL Color Values:
+        > hsl(hue, saturation, lightness)
+        > Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+        > Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+        > Lightness is also a percentage value. 0% is black, and 100% is white.
+    > HSLA Color Values:
+        > hsla(hue, saturation, lightness, alpha)
+        > The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
+
+HTML Styles - CSS:
+    > CSS stands for Cascading Style Sheets.
+    > CSS saves a lot of work. It is used to format the layout of a webpage.
+    > CSS can be added to HTML documents in 3 ways:
+        > Inline - by using the style attribute inside HTML elements
+        > Internal - by using a <style> element in the <head> section
+        > External - by using a <link> element to link to an external CSS file
+    > Inline CSS:
+        >An inline CSS is used to apply a unique style to a single HTML element.
+        > An inline CSS uses the style attribute of an HTML element.
+    Example:
+        <h1 style="color:blue;">A Blue Heading</h1>
+        <p style="color:red;">A red paragraph.</p>
+    > Internal CSS:
+        > An internal CSS is used to define a style for a single HTML page.
+        >An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+    Example
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+        </style>
+        </head>
+        <body>
+
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+
+        </body>
+        </html>
+    > CSS Border:
+        > The CSS border property defines a border around an HTML element.
+    Example:
+        p {
+            border: 2px solid powderblue;
+        }
+    > CSS Padding:
+        > The CSS padding property defines a padding (space) between the text and the border.
+    > Example:
+        p {
+            border: 2px solid powderblue;
+            padding: 30px;
+        }
+    > CSS Margin:
+        > The CSS margin property defines a margin (space) outside the border.
+    Example:
+        p {
+            border: 2px solid powderblue;
+            margin: 50px;
+        }
 
 HTML Links:
     >HTML links are defined with the <a> tag.
