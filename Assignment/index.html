@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>     
+<body>
+    <div id="list">
+        <li><strong>This section includes implementation of attributes, elements, lists, paragraph,
+        headings.</strong></li>
+        <h1 class="headings">HtMl Elements</h1> 
+        <li>HTML elements are the combination of opening tag, closing tag, attributes and content between opening and closing tag.</li>
+        <li>Elements are buliding blocks of a web Page.</li> <br>
+        <b>Here are some examples of Html Elements : </b> <br>
+        <ol>
+            <li>&lt;a&gt;<b>content</b>&lt;&#47;a&gt;</li>
+            <li>&lt;p&gt;<b>content</b>&lt;&#47;p&gt;</li>
+            <li>&lt;image&gt;<b>content</b>&lt;&#47;image&gt;</li>
+            <li>&lt;form&gt;<b>content</b>&lt;&#47;form&gt;</li>
+            <li>&lt;li&gt;<b>content</b>&lt;&#47;li&gt;</li>
+        </ol>
+    </div>
+    <hr>
+
+    <div id="list">
+        <h1 class="headings">Attributes </h1>
+        <li>Html Attributes Provide extra information in pair of name-value inside Opening tag to HTML elements.</li>
+        <li>Attributes are always written within Opening tag.</li>
+        <h2>Syntax of Attribute : </h2> &lt;start_tag attribute_name = "value_of_attribute"&gt; content goes here...  &lt;&#47;closing_tag&gt; 
+        <h3>Example of some Attributes : </h3>
+        <ul>
+            <li><strong>id = id_of_tag</strong> : Global Attribute </li>
+            <li><strong>class = class_of_tag</strong> : Globale attribute </li>
+            <li><strong>type = 1 or A</strong> : Local attribute of list </li>
+            <li><strong>src = ./directory</strong> : Local attribute of image, audio, video tag </li>
+            <li><strong>target = _blank</strong> : local attribute of form tag </li>
+        </ul>
+    </div>
+    <hr>
+    <div id="imagediv">
+        <p>
+            <h1 class="headings">Image tag</h1>
+            <strong>This Section includes implementation of : &lt;img&gt; tag with src and alt attributes.</strong>
+        </p>
+        <img src="./bugati-1.png" alt="Delorean Car" title="Super Car DELOREAN"> <br>
+        <img src="./grande_2015-ferrari-laferrari.jpeg" alt="Ferrari 2015" title="2015 Ferrari super car"><br>
+        <img src="./ferrari j50.jpg" alt="Ferrari J50" title="Ferrari J50 super car">
+    </div>
+    <hr>
+    <div id="tableid">
+        <h1 class="headings">Table tag </h1> 
+        <p>
+            <li>Organize data in rows and columns using &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;tr&gt;, &lt;thead&gt;,&lt;tbody&gt; and &lt;tfoot&gt; tags.</li>
+        </p> <br> 
+        <table>
+            <thead>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Topic</th>
+            </thead>
+            <tbody>
+                <td>04/12/24</td>
+                <td>Wed</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment : HTML and CSS</td>
+            </tbody>
+            <tbody>
+                <td>05/12/24</td>
+                <td>Thursday</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment : Javascript</td>
+            </tbody>
+            <tbody>
+                <td>09/12/24</td>
+                <td>Mon</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment: Assignment</td>
+            </tbody>    
+            <tbody>
+                <td>10/12/24</td>
+                <td>Tue</td>
+                <td>10 to 12 pm</td>
+                <td>Full Stack product devlopment : Git and GitHub</td>
+            </tbody>   
+            <tbody>
+                <td>11/12/24</td>
+                <td>Wed</td>
+                <td>10 to 12 pm</td>
+                <td>Communication</td>
+            </tbody>   
+            <tbody>
+                <td>16/12/24</td>
+                <td>Mon</td>
+                <td>10 to 12 pm</td>
+                <td>DSA</td>
+            </tbody>   
+            <tbody>
+                <td>17/12/24</td>
+                <td>Tue</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment : Projet Distribute and Team Assign</td>
+            </tbody>   
+            <tbody>
+                <td>18/12/24</td>
+                <td>Wed</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment</td>
+            </tbody>   
+            <tbody>
+                <td>23/12/24</td>
+                <td>Mon</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment</td>
+            </tbody>  
+            <tbody>
+                <td>24/12/24</td>
+                <td>Tue</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment</td>
+            </tbody>  
+            <tbody>
+                <td>25/12/24</td>
+                <td>Wed</td>
+                <td>11 to 1 pm</td>
+                <td>Full Stack product devlopment</td>
+            </tbody>           
+        </table>
+    </div>
+    <hr>
+    <div id="loginform">
+        <h1 class="headings">Form tag and type Attribute </h1>
+        <li>This section includes implementation of form tag and it's Type attribute.</li>
+        <li>input, lable,button tags are used to create a form inside &lt;form&gt; tag.</li> <br>
+        <form action="_blank">
+            <label for="name">Enter First Name : </label>
+            <input type="text" name="name" id="name" alt="FirstName" placeholder="First Name" required>
+            <label for="name">Enter Middle Name : </label>
+            <input type="text" name="name" id="name" alt="MiddleName" placeholder="Middle Name">
+            <label for="name">Enter Last Name : </label>
+            <input type="text" name="name" id="name" alt="LastName" placeholder="Last Name"required>
+            <label for="userid">Enter User Id : </label>
+            <input type="text" name="name" id="userid" alt="UserId" placeholder="User Id" required>
+            <label for="password">Enter Password : </label>
+            <input type="password" name="name" id="password" alt="Enter your password" placeholder="password" required>
+            <label for="email">Enter Email : </label>
+            <input type="email" name="email" id="email" alt="Email" placeholder="Email" required>
+            <label for="number">Enter Phone Number : </label>
+            <input type="number" name="number" id="number" alt="Enter your numer" placeholder="Number" required>
+            <label for="dob">Enter DOB : </label>
+            <input type="date" name="dob" id="dob" alt="DOB" placeholder="dd/mm/yyyy" required>
+            <label for="course">Select your Course : </label>
+            <select name="course" id="course">
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="ManualCourse">Type Your Course Manually : 
+            </label>
+            <input type="course" name="ManualCourse" placeholder="Your Course">
+            <label for="gender">Select Gender :  </label>
+            <p>
+                <input type="radio" id="male" name="gender" value="male"> Male <br>
+                <input type="radio" id="female" name="gender" value="female"> Female</p>
+            <label for="rate">Rate us 1 to 10 : </label>
+            <input type="range" name="rate" id="rate" min="1" max="10">
+            <label for="resume">Upload Your latest Resume : </label>
+            <input type="file" name="resume" id="resume" required>
+            <label for="query">Any Suggestion : </label>
+            <textarea name="query" id="query" placeholder="Type your Thoughts"></textarea> <br>
+            <button>Submit Your Details</button>
+        </form>    
+    </div>
+</body>
+</html>
