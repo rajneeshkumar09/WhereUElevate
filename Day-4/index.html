@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="shortcut icon" href="../Day-3/images/sharigan.png" type="image/x-icon">
+</head>
+<body>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis doloribus provident pariatur perspiciatis molestias magnam repudiandae, suscipit rerum explicabo! Expedita, ea autem. Reprehenderit, doloribus accusamus.</p>
+
+    <p id="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto recusandae eveniet libero molestias. Asperiores, animi?</p>
+
+    <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+
+    <p id="demo"></p>
+
+    <button type="button" id="call" onclick="Multiplication(4, 4)">call</button>
+
+    <script>
+        let y=document.getElementById("para1").innerHTML;
+        document.getElementById("para2").innerHTML=y;
+        let cars;
+        <!-- document.getElementById("demo").innerHTML= car + "<br>" + typeof cars; -->
+
+        function Multiplication(num1, num2){
+            let result = num1 * num2;
+            document.getElementById("call").innerHTML=result;
+            //return num1 * num2;
+        }
+        //let result = Multiplication(4, 8);
+        //document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>
